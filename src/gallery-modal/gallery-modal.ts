@@ -26,6 +26,7 @@ export class GalleryModal {
 
   private width: number = 0;
   private height: number = 0;
+  private componentsVisible = false;
 
   private slidesStyle: any = {
     visibility: 'hidden',
@@ -169,5 +170,12 @@ export class GalleryModal {
       this.slidesStyle.opacity = 1;
       this.modalStyle.backgroundColor = 'rgba(0, 0, 0, 1)';
     }
+  }
+
+  /**
+   * Toggle visibility of image meta and close button
+   */
+  toggleUIComponents() {
+    this.componentsVisible = !this.componentsVisible;
   }
 }

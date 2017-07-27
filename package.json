@@ -1,6 +1,6 @@
 {
-  "name": "ionic-gallery-modal",
-  "version": "0.2.1",
+  "name": "glue-ionic-gallery-modal",
+  "version": "0.2.2",
   "description": "Ionic Gallery Modal (to preview photos)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,8 +21,8 @@
     "gallery modal"
   ],
   "author": {
-    "name": "Ciprian Mocanu",
-    "email": "ciprian@mbe.ro"
+    "name": "Glue Labs",
+    "email": "info@glue-labs.com"
   },
   "license": "MIT",
   "dependencies": {

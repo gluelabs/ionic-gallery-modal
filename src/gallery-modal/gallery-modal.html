@@ -5,7 +5,7 @@
   (window:resize)="resize($event)"
   (window:orientationchange)="orientationChange($event)"
 >
-  <button class="close-button" ion-button icon-only (click)="dismiss()">
+  <button class="close-button" ion-button icon-only (click)="dismiss()" [hidden]="!componentsVisible">
     <ion-icon name="{{ closeIcon }}"></ion-icon>
   </button>
 
@@ -27,7 +27,7 @@
     (panend)="panEndEvent($event)"
     (pancancel)="panEndEvent($event)"
   >
-    <ion-slide *ngFor="let photo of photos;">
+    <ion-slide *ngFor="let photo of photos;" (click)="toggleUIComponents()">
       <zoomable-image
         src="{{ photo.url }}"
         [ngClass]="{ 'swiper-no-swiping': sliderDisabled }"
@@ -36,10 +36,10 @@
         [parentSubject]="parentSubject"
       ></zoomable-image>
 
-      <div
-        class="gallery-item-title"
-        *ngIf="photo.title"
-      >{{ photo.title }}</div>
+      <div class="gallery-item-title" *ngIf="photo.title && componentsVisible">
+        <p> {{ photo.title }} </p>
+        <p> {{ photo.description }} </p>
+      </div>
     </ion-slide>
   </ion-slides>
 </ion-content>
