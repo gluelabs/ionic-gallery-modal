@@ -2,6 +2,8 @@
 [![NPM Version](http://img.shields.io/npm/v/ionic-gallery-modal.svg?style=flat)](https://www.npmjs.org/package/ionic-gallery-modal)
 [![NPM Downloads](https://img.shields.io/npm/dm/ionic-gallery-modal.svg?style=flat)](https://www.npmjs.org/package/ionic-gallery-modal)
 
+![Glue Labs Logo](https://glue-labs.com/wp-content/themes/2015/img/glue-labs.png)
+
 # Ionic Gallery Modal
 
 It consists of a modal that will help you make gallery preview modal.
@@ -21,7 +23,7 @@ Last tested with Ionic 3.5.0
 Install it using npm
 
 ```
-npm install ionic-gallery-modal --save
+npm install glue-ionic-gallery-modal --save
 ```
 
 and then, within your application module 
@@ -73,16 +75,17 @@ modal.present();
 
 ## Options
 
-The possible options for it are:
+The available options are:
 
 ```
 {
   photos: Array[{ 
     url: string, 
     type: string,
+    description: string
   }],
   closeIcon: string,
-  initialSlide: number,
+  initialSlide: number
 }
 ```
 
@@ -90,6 +93,9 @@ The possible options for it are:
 Let us know or submit a PR! And, please, don't hesitate to contribute. :heart:
 
 ## Changelog
+
+#### v0.2.2
+ * Add tap to show details and item description
 
 #### v0.2.1
  * Fixed a bug which caused the production build to not work

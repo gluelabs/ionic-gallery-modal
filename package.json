@@ -22,7 +22,7 @@
   ],
   "author": {
     "name": "Glue Labs",
-    "email": "info@glue-labs.com"
+    "email": "antonio.barbatelli@glue-labs.com"
   },
   "license": "MIT",
   "dependencies": {
@@ -72,6 +72,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nikini/ionic-gallery-modal.git"
+    "url": "https://github.com/gluelabs/ionic-gallery-modal.git"
   }
 }
